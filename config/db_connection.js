@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 
  
 
-module.exports.db_conn= mongoose.connect(`mongodb://magicians:pass123@ds211368.mlab.com:11368/sportsbooking`,{
+module.exports.db_conn= mongoose.connect(`mongodb+srv://mint:mint@cluster0.imvgl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,{
     useUnifiedTopology: true,
     useNewUrlParser: true
 })
