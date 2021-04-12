@@ -15,8 +15,8 @@ router.post('/service',async (req, res) => {
     });
 
    await schema.save()
-    .then( result => console.log(result.toJSON()))
-    .catch(error => console.error(error))
+    .then( res.status(201).json({message:"Service created successfully!"}))
+    .catch( res.json({message:"Error creating service"}))
    
 
 
