@@ -16,6 +16,8 @@ const cors = require('cors')
 const UserControllers=require('./controllers/userController')
 const BookingControllers=require('./controllers/bookingController')
 const EventControllers=require('./controllers/eventController')
+const ServiceControllers=require('./controllers/serviceController')
+
 const pagesControllers=require('./controllers/pagesControllers')
 const UrlAuth = require('./controllers/index')
 const MessageUsController = require('./controllers/messageUsController')
@@ -112,6 +114,7 @@ UserControllers,
 EventControllers,
 pagesControllers,
 UrlAuth,
+ServiceControllers,
 MessageUsController,
 sendmail
 ]
