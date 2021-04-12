@@ -1,3 +1,3 @@
 module.exports.User=require('./users').User;
-module.exports.Facilities=require('./facilities');
-module.exports.Bookings=require('./booking').Bookings;
+module.exports.Service=require('./services').Service;
+module.exports.Subscription=require('./subscription').Subscription;
