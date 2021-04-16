@@ -14,15 +14,10 @@ const cors = require('cors')
 //const user=require('./models/users');
 //const User=require('./models/users');
 const UserControllers=require('./controllers/userController')
-const BookingControllers=require('./controllers/bookingController')
-const EventControllers=require('./controllers/eventController')
-const ServiceControllers=require('./controllers/serviceController')
-
+const DoctorControllers=require('./controllers/doctorController')
+const PatientControllers=require('./controllers/patientController')
 const pagesControllers=require('./controllers/pagesControllers')
-const UrlAuth = require('./controllers/index')
-const MessageUsController = require('./controllers/messageUsController')
-const sendmail = require('./controllers/email')
-const userRoutes = require('./routes/users');
+const userRoutes = require('./routes/users')
 
 require('./config/passport')(passport);
 
@@ -110,13 +105,10 @@ app.use("/user", userRoutes);
 app.use('/',
  [
 UserControllers,
- BookingControllers,
-EventControllers,
 pagesControllers,
-UrlAuth,
-ServiceControllers,
-MessageUsController,
-sendmail
+DoctorControllers,
+PatientControllers
+
 ]
 );
 

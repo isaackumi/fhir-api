@@ -4,7 +4,7 @@ const mongoose=require('mongoose');
 
  
 
-module.exports.db_conn= mongoose.connect(`mongodb+srv://mint:mint@cluster0.imvgl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,{
+module.exports.db_conn= mongoose.connect(`mongodb+srv://fhir:fhir@cluster0.8c2fh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,{
     useUnifiedTopology: true,
     useNewUrlParser: true
 })
